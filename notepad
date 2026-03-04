@@ -9,3 +9,36 @@ Task 11 -- Create an Azure Via Azure CLI/Powershell
 CLI -- Cloudshell in azure
 
 az vm create --resource-group ajit-rg --name VM-CLI --size=Standard_B2ats_v2 --image Ubuntu2404 --admin-username ajitadmin --generate-ssh-keys
+
+========================================================================================================================================
+
+
+Deploy your application in container via ACR (webapp)
+
+
+Docker containers -- images -- dockerhub
+
+
+>>  ACR (AZure Container Registry)
+
+
+Build a custom image -- push image to ACR -- WebAPP 
+
+DockerFile -- Syntax how to build image from application code + depnd. + expose port 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
