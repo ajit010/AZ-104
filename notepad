@@ -28,6 +28,86 @@ DockerFile -- Syntax how to build image from application code + depnd. + expose 
 
 
 
+Create a Linux VM -- Installed Docker with help of script .
+
+>> Clone the repo "https://github.com/ajit010/My-Docker-App.git" 
+
+>> Inside repo --  sudo docker build -t <name-of-image> .
+
+This will create an image ..
+
+>> we tested the container ..
+
+
+WE want to deploy this container inside webapp (PaaS)
+
+Push image to ACR 
+
+-- Tag the image with ACR server address
+
+sudo docker tag <your-current-image> < tagimageid with server>
+
+>> sudo docker tag ajit-image01:v1 ajitadmin.azurecr.io/ajit-image01:v1
+
+-- Login to ACR
+
+>> sudo docker login <server-address-of ACR>
+
+-- Push to ACR
+
+>> sudo docker push ajitadmin.azurecr.io/ajit-image01:v1
+
+
+===================================================================================
+
+
+Inside Container Registeries :
+
+A new repo will be created with name of image ..
+
+
+Next task -- Deploy webapp for Container  --
+
+App Service -- Create webapp
+
+Publish as  container -- Linux OS -- Pricing plan (B1) or Free
+
+Container -- Image from ACR  -- sleect name of image
+
+When webapp will be create, wait 2-3 minutes, and you should get output when you visit website address ..
+
+Hello from Dockerized Flask App 🎉
+This is running inside a container on port 8080.
+
+
+============================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
